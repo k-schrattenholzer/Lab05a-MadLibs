@@ -17,3 +17,9 @@ console.log(noun1Input, adj1Input, verb1Input, noun2Input, submitButton, noun1Ou
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+submitButton.addEventListener('click',()=>{
+  noun1Output.textContent = noun1Input.value;
+  adj1Output.textContent = adj1Input.value;
+  verb1Output.textContent = verb1Input.value;
+  noun2Output.textContent = noun2Input.value;
+})
