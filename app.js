@@ -8,10 +8,12 @@ const noun1Output = document.getElementById('noun-1output');
 const adj1Output = document.getElementById('adj-1output');
 const verb1Output = document.getElementById('verb-1output');
 const noun2Output = document.getElementById('noun-2output');
+const song = document.querySelector('.song');
+const resetButton = document.getElementById('reset')
 
 // initialize state
 
-console.log(noun1Input, adj1Input, verb1Input, noun2Input, submitButton, noun1Output, adj1Output, noun2Output);
+// console.log(noun1Input, adj1Input, verb1Input, noun2Input, submitButton, noun1Output, adj1Output, noun2Output);
 
 // set event listeners 
   // get user input
@@ -22,4 +24,10 @@ submitButton.addEventListener('click',()=>{
   adj1Output.textContent = adj1Input.value;
   verb1Output.textContent = verb1Input.value;
   noun2Output.textContent = noun2Input.value;
+  song.style.visibility = 'visible';
 })
+
+// May want to revise if hitting stretch goal.
+resetButton.addEventListener('click',()=>{
+  window.location.reload();
+});

@@ -18,9 +18,8 @@ body {
 	--footer-height: 25px;
 
 	font-family: "Titillium Web", sans-serif;
-	background-color: var(--color2);
-	background-color: black;
-	color: white;
+	background-image: url('https://images.unsplash.com/photo-1605595988901-3d06601c38ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80');
+	background-size: cover;
 }
 
 main {
@@ -62,8 +61,9 @@ footer {
 }
 
 h2 {
-	font-size: 1.8rem;
+	font-size: 3rem;
 	font-weight: bold;
+	color: white;
 }
 
 .gutter-right {
@@ -109,4 +109,27 @@ footer {
 	80% {
 		transform: rotate3d(10, 10, 10, 50deg) scale(1);
 	}
+}
+
+
+.form{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+input{
+	border-radius: 5px;
+}
+
+.button{
+	border-radius: 5px;
+	margin: 2px;
+}
+
+.song{
+	visibility: hidden;
+	background-color: black;
+	opacity: 75%;
+	color: white;
 }
