@@ -9,8 +9,7 @@ const adj1Output = document.getElementById('adj-1output');
 const verb1Output = document.getElementById('verb-1output');
 const noun2Output = document.getElementById('noun-2output');
 const song = document.querySelector('.song');
-const resetButton = document.getElementById('reset')
-const validation = document.querySelector('.val')
+const resetButton = document.getElementById('reset');
 
 // initialize state
 
@@ -21,7 +20,10 @@ const validation = document.querySelector('.val')
   // use user input to update state 
   // update DOM to reflect the new state
 submitButton.addEventListener('click',()=>{
-  if (noun1Input.value !== "" && noun2Input.value !== "" &&  adj1Input.value !== "" && verb1Input.value !== "") {
+  if (noun1Input.value !== "" 
+    && noun2Input.value !== "" 
+    &&  adj1Input.value !== "" 
+    && verb1Input.value !== "") {
   noun1Output.textContent = noun1Input.value;
   adj1Output.textContent = adj1Input.value;
   verb1Output.textContent = verb1Input.value;
