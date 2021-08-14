@@ -120,11 +120,28 @@ footer {
 
 input{
 	border-radius: 5px;
+	height: 30px;
+	font-size: 1.3em;
+	font-family: "Titillium Web", sans-serif;
+	text-align: center;
 }
 
 .button{
+	display:flex;
 	border-radius: 5px;
 	margin: 2px;
+	height: 30px;
+	background-color: black;
+	color:white;
+	font-size: 1.4em;
+	padding: 15px;
+	align-items: center;
+	font-family: "Titillium Web", sans-serif;
+}
+
+.button:hover {
+	cursor: pointer;
+	border: 1px solid white;
 }
 
 .song{
@@ -132,4 +149,11 @@ input{
 	background-color: black;
 	opacity: 75%;
 	color: white;
+	font-size:1.4em;
+	border-radius: 5px;
+}
+
+span {
+	font-weight:bolder;
+	color:hotpink;
 }
