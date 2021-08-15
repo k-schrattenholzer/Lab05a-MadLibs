@@ -88,9 +88,10 @@ footer {
 	bottom: 0;
 	height: var(--footer-height);
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	background-color: var(--color3);
 	box-shadow: var(--shadow);
+	color: white;
 }
 
 @keyframes pulse {
@@ -156,4 +157,8 @@ input{
 span {
 	font-weight:bolder;
 	color:hotpink;
+}
+
+footer > p{
+	margin: 0;
 }
