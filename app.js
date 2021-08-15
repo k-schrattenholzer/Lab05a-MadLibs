@@ -10,10 +10,11 @@ const verb1Output = document.getElementById('verb-1output');
 const noun2Output = document.getElementById('noun-2output');
 const song = document.querySelector('.song');
 const resetButton = document.getElementById('reset');
+const gameScore = document.getElementById('gameCounter');
 
 // initialize state
-
-// console.log(noun1Input, adj1Input, verb1Input, noun2Input, submitButton, noun1Output, adj1Output, noun2Output);
+let gameCounter = 0
+// console.log(noun1Input, adj1Input, verb1Input, noun2Input, submitButton, noun1Output, adj1Output, noun2Output, verb1Output, song, resetButton);
 
 // set event listeners 
   // get user input
@@ -29,13 +30,21 @@ submitButton.addEventListener('click',()=>{
   verb1Output.textContent = verb1Input.value;
   noun2Output.textContent = noun2Input.value;
   song.style.visibility = 'visible';
+  //State Management
+  gameCounter++;
+  gameScore.textContent = gameCounter;
   }
   else {
     alert('Please fill out all fields.');
   }
 })
 
-// May want to revise if hitting stretch goal.
+// Resets game without loosing state.
 resetButton.addEventListener('click',()=>{
-  window.location.reload();
+  // window.location.reload();
+  song.style.visibility = 'hidden';
+  noun1Input.value = ""; 
+  noun2Input.value = "";
+   adj1Input.value = ""; 
+  verb1Input.value = "";
 });
